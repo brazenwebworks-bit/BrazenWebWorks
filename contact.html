@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Brazen Studios</title>
+    <meta name="description" content="Get in touch with Brazen Studios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-main);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: var(--color-secondary);
+            border: 1px solid rgba(136, 146, 176, 0.2);
+            color: var(--color-text-main);
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><img src="assets/media/Untitled_design-removebg-preview.png"
+                    alt="Brazen Studios" style="height: 90px;"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="industries.html">Industries</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="btn btn-white">Start a Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" style="padding: 8rem 0 6rem; position: relative; overflow: hidden; min-height: 100vh;">
+        <video autoplay muted loop playsinline
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.3;">
+            <source src="assets/media/Video for Contact Page.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container" style="position: relative; z-index: 1; max-width: 1200px;">
+            <!-- Centered Header -->
+            <div style="text-align: center; margin-bottom: 5rem;">
+                <h1 style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: 1rem;">Let's Build
+                    Something Amazing</h1>
+                <p style="font-size: 1.2rem; color: var(--color-text-light); max-width: 600px; margin: 0 auto;">Ready to
+                    elevate your brand? Fill out the form or reach out to us directly.</p>
+            </div>
+
+            <!-- Contact Grid -->
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start;">
+                <!-- Contact Info Card -->
+                <div
+                    style="padding: 3rem 2rem; background: rgba(5, 10, 48, 0.4); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px;">
+                    <h3
+                        style="font-family: var(--font-heading); font-size: 1.8rem; color: #10b981; margin-bottom: 2.5rem;">
+                        Contact Info</h3>
+
+                    <div style="margin-bottom: 2.5rem;">
+                        <h4
+                            style="color: #10b981; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.75rem; font-weight: 600;">
+                            Email</h4>
+                        <p style="font-size: 1.1rem;">Brazenwebworks@gmail.com</p>
+                    </div>
+
+                    <div style="margin-bottom: 2.5rem;">
+                        <h4
+                            style="color: #10b981; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.75rem; font-weight: 600;">
+                            Phone</h4>
+                        <p style="font-size: 1.1rem;">320-699-1807</p>
+                    </div>
+
+                    <div>
+                        <h4
+                            style="color: #10b981; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.75rem; font-weight: 600;">
+                            Location</h4>
+                        <p style="font-size: 1.1rem;">123 Design District, Creative City</p>
+                    </div>
+                </div>
+                <!-- Contact Form Card -->
+                <div>
+                    <form action="https://formspree.io/f/mvgewovb" method="POST"
+                        style="background: rgba(5, 10, 48, 0.4); padding: 3rem; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px;">
+                        <div style="margin-bottom: 2rem;">
+                            <label
+                                style="display: block; margin-bottom: 0.75rem; color: #10b981; font-weight: 600;">Name</label>
+                            <input type="text" name="name" placeholder="Your Name" required
+                                style="width: 100%; padding: 1rem 1.25rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; color: white; font-size: 1rem;">
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <label
+                                style="display: block; margin-bottom: 0.75rem; color: #10b981; font-weight: 600;">Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required
+                                style="width: 100%; padding: 1rem 1.25rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; color: white; font-size: 1rem;">
+                        </div>
+                        <div style="margin-bottom: 2.5rem;">
+                            <label
+                                style="display: block; margin-bottom: 0.75rem; color: #10b981; font-weight: 600;">Message</label>
+                            <textarea name="message" rows="6" placeholder="Tell us about your project..." required
+                                style="width: 100%; padding: 1rem 1.25rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; color: white; font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit"
+                            style="width: 100%; padding: 1.25rem; background: #10b981; color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2025 Brazen Studios. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

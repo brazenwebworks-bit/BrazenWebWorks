@@ -1,0 +1,409 @@
+/* Industries Page Redesign - Custom Styles */
+
+/* Hero Section */
+.industries-hero {
+    padding: 10rem 0 6rem;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.industries-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-headline {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Category Sections */
+.category-section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.contractors-category {
+    background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
+}
+
+.wellness-category {
+    background: linear-gradient(to bottom, #0d3d3d 0%, #134e4a 100%);
+}
+
+.services-category {
+    background: linear-gradient(to bottom, #1e293b 0%, #334155 100%);
+}
+
+.category-heading {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.contractors-category .category-heading {
+    color: #3b82f6;
+}
+
+.contractors-category .category-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #3b82f6;
+    border-radius: 2px;
+}
+
+.wellness-category .category-heading {
+    color: #14b8a6;
+}
+
+.wellness-category .category-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #14b8a6;
+    border-radius: 2px;
+}
+
+.services-category .category-heading {
+    color: #94a3b8;
+}
+
+.services-category .category-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #94a3b8;
+    border-radius: 2px;
+}
+
+/* Business Grid */
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Business Cards */
+.business-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.business-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.business-card:hover::before {
+    opacity: 1;
+}
+
+.contractors-category .business-card {
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.contractors-category .business-card:hover {
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.2);
+}
+
+.wellness-category .business-card {
+    border-color: rgba(20, 184, 166, 0.3);
+}
+
+.wellness-category .business-card:hover {
+    border-color: rgba(20, 184, 166, 0.6);
+    box-shadow: 0 12px 40px rgba(20, 184, 166, 0.2);
+}
+
+.services-category .business-card {
+    border-color: rgba(148, 163, 184, 0.3);
+}
+
+.services-category .business-card:hover {
+    border-color: rgba(148, 163, 184, 0.6);
+    box-shadow: 0 12px 40px rgba(148, 163, 184, 0.2);
+}
+
+/* Card Icon */
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.business-card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+/* Card Content */
+.business-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.pain-point {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.solution {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.contractors-category .solution {
+    color: #93c5fd;
+}
+
+.wellness-category .solution {
+    color: #5eead4;
+}
+
+.services-category .solution {
+    color: #cbd5e1;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.contractors-category .features li::before {
+    color: #3b82f6;
+}
+
+.wellness-category .features li::before {
+    color: #14b8a6;
+}
+
+.services-category .features li::before {
+    color: #94a3b8;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    text-align: center;
+    color: white;
+}
+
+.final-cta-section h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-cta-primary {
+    display: inline-block;
+    padding: 1.25rem 3rem;
+    background: white;
+    color: #059669;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    background: #f0fdf4;
+}
+
+.cta-subtext {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .business-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hero-headline {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .category-heading {
+        font-size: 2rem;
+    }
+
+    .final-cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+    }
+
+    .industries-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .category-section {
+        padding: 3rem 0;
+    }
+}
+
+/* Animation on Scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.business-card {
+    animation: fadeInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.business-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.business-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.business-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.business-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.business-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.business-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+/* Image styling for card icons */
+.card-icon { width: 100%; max-width: 200px; height: auto; }
+.card-icon img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }

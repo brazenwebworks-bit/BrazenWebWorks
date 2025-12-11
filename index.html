@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazen Web Works | Digital Craftsmanship. Built Brazen.</title>
+    <meta name="description"
+        content="Unshakeable digital foundations for service businesses. Professional web design with Local SEO, mobile-first design, and technical excellence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+    <!-- Pop-up Modal -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Let's Get Started</h2>
+            <p>Tell us about your business and goals.</p>
+            <form id="leadForm" class="lead-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell us about your business goals..." required></textarea>
+                <button type="submit" class="btn-primary">Get Started</button>
+            </form>
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>✓ Thanks for reaching out!</p>
+                <p style="font-size: 0.95rem; color: #6b7280; margin-top: 0.5rem;">We'll be in touch soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Modal Tab -->
+    <button id="modalTab" class="modal-tab" aria-label="Get Started">
+        <span>Get Started</span>
+    </button>
+
+    <!-- Fixed Right Toolbar -->
+    <nav class="fixed-toolbar">
+        <a href="#packages" class="toolbar-link">Packages</a>
+        <a href="#discuss" class="toolbar-link">Contact</a>
+        <a href="#faq" class="toolbar-link">FAQ</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo"><img src="assets/media/Untitled_design-removebg-preview.png"
+                    alt="Brazen Studios" style="height: 90px;"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="industries.html">Industries</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="btn btn-white">Start a Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <video autoplay muted loop playsinline class="welcome-video">
+            <source src="assets/media/We enable brands to make their mark in history (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container welcome-content">
+            <h1 class="brand-title">Bɾαȥҽɳ WҽႦ</h1>
+            <p class="brand-tagline">Built Bold, Built Brazen</p>
+            <div class="neon-divider"></div>
+            <p class="welcome-message">Welcome to the foundation of your service business.</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <p class="section-subtitle">Professional web solutions designed for service businesses. No hidden fees. No
+                agency markup.</p>
+
+            <div class="packages-grid">
+                <!-- Foundation Package -->
+                <div class="package-card">
+                    <div class="package-icon"></div>
+                    <h3>Starter Package</h3>
+                    <p class="package-price">$150</p>
+                    <ul class="package-features">
+                        <li>5-Page Professional Website</li>
+                        <li>Mobile-First Responsive Design</li>
+                        <li>Basic Local SEO Setup</li>
+                        <li>Contact Form Integration</li>
+                    </ul>
+                    <button class="btn-package">Learn More</button>
+                </div>
+
+                <!-- Growth Package -->
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-icon"></div>
+                    <h3>Standard Package</h3>
+                    <p class="package-price">$300</p>
+                    <ul class="package-features">
+                        <li>10-Page Custom Website</li>
+                        <li>Advanced Local SEO Optimization</li>
+                        <li>Custom Lead Capture Forms</li>
+                        <li>Google Business Integration</li>
+                    </ul>
+                    <button class="btn-package">Learn More</button>
+                </div>
+
+                <!-- Custom Package -->
+                <div class="package-card">
+                    <div class="package-icon"></div>
+                    <h3>Custom Package</h3>
+                    <p class="package-price">Price Varies</p>
+                    <ul class="package-features">
+                        <li>Unlimited Pages</li>
+                        <li>Premium SEO Strategy</li>
+                        <li>Advanced Analytics Dashboard</li>
+                        <li>Priority Support & Maintenance</li>
+                    </ul>
+                    <button class="btn-package">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Discussion CTA Section -->
+    <section id="discuss" class="discuss-section">
+        <div class="container">
+            <h2>Ready to Talk Strategy?</h2>
+            <p>Let's discuss how we can build your digital authority and grow your service business.</p>
+            <button class="btn-cta">Schedule a Discovery Call</button>
+        </div>
+    </section>
+
+    <!-- FAQ & Why Choose Us Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="faq-layout">
+                <!-- FAQ Accordion -->
+                <div class="faq-content">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How fast is the turnaround?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most projects are completed within 2-4 weeks, depending on complexity. We prioritize
+                                quality and speed without compromising either.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer ongoing support?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! All packages include 30 days of post-launch support. We also offer monthly
+                                maintenance plans for ongoing updates and technical support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What makes you different from other agencies?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We're graduate students bringing cutting-edge research and technical precision to small
+                                businesses at a fraction of agency costs. You get personalized attention and
+                                academic-level expertise.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I update the website myself?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We provide comprehensive training and documentation so you can make updates
+                                independently. We're always available for technical assistance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What's included in Local SEO?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Local SEO includes Google Business Profile optimization, local keyword targeting, schema
+                                markup, citation building, and technical SEO to ensure you rank in your service area.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us Sidebar -->
+                <div class="why-choose-panel">
+                    <h3>Why Brazen Web Works?</h3>
+
+                    <div class="reason-item">
+                        <div class="reason-icon"></div>
+                        <h4>Academic Excellence</h4>
+                        <p>Graduate-level research in digital trends and web performance applied directly to your
+                            business.</p>
+                    </div>
+
+                    <div class="reason-item">
+                        <div class="reason-icon"></div>
+                        <h4>Expert Team</h4>
+                        <p><strong>Brea:</strong> Technical architecture & performance engineering<br>
+                            <strong>Paige:</strong> Client strategy & digital success
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <div class="reason-icon"></div>
+                        <h4>Personalized Attention</h4>
+                        <p>No compartmentalized teams. You work directly with experts who care about your success.</p>
+                    </div>
+
+                    <div class="reason-item">
+                        <div class="reason-icon"></div>
+                        <h4>Technical Precision</h4>
+                        <p>Clean code, blazing speed, and security protocols that enterprise agencies charge 10x for.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Contact Section -->
+    <section class="final-contact-section">
+        <div class="container">
+            <h2>Your Authority Starts Here</h2>
+            <p>Ready to establish your digital presence and dominate your local market?</p>
+            <button class="btn-final-cta">Contact Us to Start Your Project</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Brazen Web Works</h4>
+                    <p>Digital Craftsmanship. Built Brazen.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>Brazenwebworks@gmail.com</p>
+                    <p>320-699-1807</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Brazen Web Works. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
